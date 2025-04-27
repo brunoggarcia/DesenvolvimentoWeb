@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.cadastro, .lista {
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    width: 400px;
+    height: 600px;
+    box-sizing: border-box;
+}
+
+.cadastro h1, .lista h2 {
+    text-align: center;
+}
+
+.cadastro input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.cadastro button {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#botaoCadastrar {
+    background-color: green;
+    color: white;
+}
+
+#verLista {
+    background-color: blue;
+    color: white;
+}
+
+.lista {
+    display: none;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.lista p {
+    margin: 10px 0;
+}
+
+#removerCadastro {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;
+    align-self: center;
+}

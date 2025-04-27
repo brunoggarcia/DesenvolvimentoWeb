@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Veículos - MVC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <form class="cadastro" id="formCadastro">
+        <h1>Cadastro</h1>
+        <input type="text" id="placa" placeholder="Placa do veículo" required>
+        <input type="text" id="nome" placeholder="Nome do proprietário" required>
+        <input type="text" id="ap" placeholder="Número do apartamento" required>
+        <input type="text" id="bloco" placeholder="Bloco do apartamento" required>
+        <input type="text" id="modelo" placeholder="Modelo do veículo" required>
+        <input type="text" id="cor" placeholder="Cor do veículo" required>
+        <input type="text" id="vaga" placeholder="Número da vaga de estacionamento" required>
+        <button type="submit" id="botaoCadastrar">Cadastrar</button>
+        <button type="button" id="verLista">Ver lista</button>
+    </form>
+
+    <div class="lista" id="lista">
+        <h2>Informações Cadastradas</h2>
+        <div id="conteudoLista"></div>
+        <button id="removerCadastro">Remover Cadastro</button>
+    </div>
+</div>
+
+<script src="controller.js"></script>
+
+</body>
+</html>
